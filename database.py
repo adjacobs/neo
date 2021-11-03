@@ -107,7 +107,7 @@ class NEODatabase:
         # Fetch an NEO by its name.
         for neo in self._neos:
             if name == neo.name:
-                return neo.d
+                return neo
         return None
 
     def query(self, filters):

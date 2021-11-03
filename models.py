@@ -57,7 +57,7 @@ class NearEarthObject:
             self.diameter = float('nan')
 
         # Check for a N/No or Y/Yes to set hazardous level.
-        if 'N' in self.info['pha'].upper():
+        if 'N' in self.info['pha'].upper() or not self.info['pha']:
             self.hazardous = False
         else:
             self.hazardous = True
